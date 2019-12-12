@@ -22,5 +22,5 @@ jobs:
       uses: azure/webapps-deploy@v1
       with: 
         app-name: githubactionsaamarber # Replace with your app name
-        publish-profile: ${{ secrets.azure }} # Define secret variable in repository settings as per action documentation
+        publish-profile: ${{ secrets.azure_credentials }} # Define secret variable in repository settings as per action documentation
         package: ${{env.DOTNET_ROOT}}/myapp 
